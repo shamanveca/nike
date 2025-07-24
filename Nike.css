@@ -1,0 +1,292 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    box-sizing: border-box; /* Делает ограничения размеров элементов по их границе */
+    scroll-behavior: smooth;
+    overflow-anchor: none; /* Запоминает положение на странице и после обновления автоматически прокручивает к тому же элементу */
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+body{
+    background-color: #1E1E1E;
+}
+
+.vse_soderjimoe{
+    display: flex;
+    margin-left: 30px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.text_shoes{
+    display: flex;
+    position: relative;
+    position: absolute;
+    left: 738px;
+    top: 50px;
+    
+}
+
+.big_text{
+    font-family: 'Londrina Shadow',sans-serif;
+    font-size: 260px;
+    line-height: 308px;
+    font-weight: 400;
+    color: rgba(254, 107, 40, 0.15);
+    z-index: 1;
+
+}
+
+.big_shoes_cont{
+    position: absolute;
+    overflow: hidden;
+    z-index: 2;
+    left: -555px;
+    top: -500px;
+    width: 1500px;
+    height: 1600px;
+    clip-path: inset(0px 0px 0px 550px);
+}
+
+
+
+.osn_conteiner{
+    width: 1440px;
+    height: 1024px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;   
+}
+
+
+
+.nav_item{
+    margin-right: 100px;
+}
+
+.osn_nav{
+    margin-left: 100px;
+    margin-top: 85px;
+    margin-bottom: 85px;
+}
+
+.nav_list{
+    display: flex;
+}
+
+.nav_link{
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 500;
+    position: relative;
+}
+
+.nav_link:hover{
+    cursor: pointer;
+    
+}
+
+.nav_link::after{ /* Делаем собственное подчеркивание */
+    position: absolute;
+    content: '';
+    left: 50%; /* смещение чтобы начиналось подчеркивание из центра */
+    transform: translateX(-50%); /* смещение чтобы начиналось подчеркивание из центра */
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000000;
+    transition: 0.3s;
+}
+
+.nav_link:hover::after{ /* Делаем собственное подчеркивание */
+    width: 100%;
+}
+
+.line_top1, .line_top2{
+    border: 1px solid rgb(211, 211, 211);
+    width: 56%;
+}
+
+.line_top1{
+    margin-bottom: 2px;
+}
+
+.line_top2{
+    margin-bottom: 55px;
+}
+
+.telo2{
+    margin-left: 100px;
+    margin-bottom: 52px;
+}
+
+.zag_name{
+    font-family: 'Kanit', sans-serif;
+    font-size: 70px;
+    line-height: 104px;
+    font-weight: 600;
+}
+
+.zag_model{
+    font-family: 'Kanit', sans-serif;
+    font-size: 113.5px;
+    line-height: 120px;
+    font-weight: 300;
+    color: rgb(252, 113, 45);
+    margin-bottom: 20px;
+}
+
+.telo2_text{
+    font-family: 'Kanit', sans-serif;
+    font-size: 17.5px;
+    line-height: 26px;
+    font-weight: 400;
+    text-transform: capitalize /* Делает все первые буквы слов заглавными */
+}
+
+.price{
+    font-family: 'Kanit', sans-serif;
+    font-size: 55px;
+    line-height: 82px;
+    font-weight: 300;
+    color: rgb(41, 41, 41);
+}
+
+.price_button{
+    font-family: 'Kanit', sans-serif;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 500;
+    color: rgb(41, 41, 41);
+    width: 165px;
+    height: 60px;
+    border-radius: 50px;
+    background-color: rgb(240, 240, 240);
+    box-shadow: 4px 6px 10px 0px rgba(0, 0, 0, 0.25);
+    border: none;
+}
+
+.price_button:hover{
+    cursor: pointer;
+}
+
+.price_button:active{
+    box-shadow: none;
+}
+
+.price_list{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.price_item{
+    margin-right: 50px;
+}
+
+.line_bottom1, .line_bottom2{
+    border: 1px solid rgb(211, 211, 211);
+    width: 51.7%;
+}
+
+.line_bottom1{
+    margin-bottom: 2px;
+}
+
+.telo3_flex{
+    display: flex;
+    margin-left: 81px;
+}
+
+.telo3_flex_item{
+    position: relative;
+    margin-right: 42px;
+}
+
+.telo3_img_cont{
+    width: 180px;
+    height: 140px;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.telo3_img{
+    position: absolute;
+    left: -60px;
+    top: -85px;
+}
+
+.telo3_text_cont{
+    width: 180px;
+    height: 120px;
+    border-radius: 30px;
+    background-color: rgb(228, 228, 228);
+    position: absolute;
+    margin-top: -70px;
+    z-index: 1;
+}
+
+.telo3_flex2{
+    display: flex;
+    margin-left: 19px;
+    padding-top: 64px;
+}
+
+.text_telo3{
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: 700;
+}
+
+.telo3_price{
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    line-height: 12px;
+    font-weight: 400;
+}
+
+.telo3_flex2_price{
+    margin-left: 40px;
+    margin-top: 4px;
+}
+
+.zvezdy_item{
+    display: inline-block;
+}
+
+.zvezdy_list{
+    margin-top: 3px;
+}
+
+.telo3_button{
+    width: 40px;
+    height: 40px;
+    border-radius: 9px;
+    background-color: rgb(30, 30, 30);
+    color: rgb(245, 245, 245);
+    font-size: 35px;
+    border: none;
+    position: absolute;
+    z-index: 2;
+    left: 155px;
+    top: 167px;
+}
+
+.telo3_button:hover{
+    cursor: pointer;
+}
